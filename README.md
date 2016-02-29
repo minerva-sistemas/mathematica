@@ -1,2 +1,1 @@
-# mathematica
-Biblioteca para padronização e reutilização de formulas matemáticas.
+![](http://i.imgur.com/jW16dOb.png)
