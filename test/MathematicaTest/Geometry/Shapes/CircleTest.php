@@ -31,7 +31,7 @@ class CircleTest extends AbstractShapeTest
      */
     public function testCircleAreaCalculation()
     {
-        $this->assertEquals($this->getShape()->getArea(), 78.5);
+        $this->assertEquals((int)$this->getShape()->getArea(), 78);
     }
 
     /**
@@ -39,7 +39,7 @@ class CircleTest extends AbstractShapeTest
      */
     public function testCirclePerimeterCalculation()
     {
-        $this->assertEquals($this->getShape()->getPerimeter(), 31.4);
+        $this->assertEquals((int)$this->getShape()->getPerimeter(), 31);
     }
 
     /**

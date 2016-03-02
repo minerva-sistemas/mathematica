@@ -2,6 +2,7 @@
 
 namespace Mathematica\Geometry\Shapes;
 
+use Mathematica\Enuns\Constants;
 use Mathematica\Geometry\Shapes\Base\AbstractGeometricShape;
 
 /**
@@ -11,8 +12,6 @@ use Mathematica\Geometry\Shapes\Base\AbstractGeometricShape;
  */
 class Circle extends AbstractGeometricShape
 {
-    const Pi = 3.14;
-
     /**
      * Tamanho do raio da circunferência
      * @var float
@@ -70,7 +69,7 @@ class Circle extends AbstractGeometricShape
     {
         //A = π * r²
 
-        return self::Pi * ($this->getRadius()*$this->getRadius());
+        return Constants::Archimedes * ($this->getRadius()*$this->getRadius());
     }
 
     /**
@@ -82,7 +81,7 @@ class Circle extends AbstractGeometricShape
         //P = 2 * π * r,
 
 
-        return 2 * self::Pi * $this->getRadius();
+        return 2 * Constants::Archimedes * $this->getRadius();
     }
 
 
