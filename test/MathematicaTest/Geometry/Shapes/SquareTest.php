@@ -41,4 +41,21 @@ class SquareTest extends AbstractShapeTest
     {
         $this->assertEquals($this->getShape()->getPerimeter(), 40);
     }
+
+    /**
+     * Testa as comparações de medidas entre dois objetos.
+     */
+    public function testGeometricalComparation()
+    {
+        // Configura o quadrado
+        $tinySquare = new Square();
+        $tinySquare->setName('Quadrado de Testes');
+        $tinySquare->setEdgeSize(5);
+
+        $this->assertTrue($this->getShape()->greaterAreaThan($tinySquare));
+        $this->assertTrue($this->getShape()->greaterPerimeterThan($tinySquare));
+
+        $this->assertNotTrue($tinySquare->greaterAreaThan($this->getShape()));
+        $this->assertNotTrue($tinySquare->greaterPerimeterThan($this->getShape()));
+    }
 }
