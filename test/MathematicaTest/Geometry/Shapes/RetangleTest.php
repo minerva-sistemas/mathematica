@@ -23,7 +23,7 @@ class RetangleTest extends AbstractShapeTest
         $retangle->setEdgeY(20);
         $retangle->setEdgeX(35);
 
-        // Define o retangulo a ser testado
+        // Define o retangulo a ser testado.
         $this->setShape($retangle);
     }
 
