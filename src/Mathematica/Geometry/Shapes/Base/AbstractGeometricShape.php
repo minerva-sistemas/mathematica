@@ -4,7 +4,7 @@ namespace Mathematica\Geometry\Shapes\Base;
 
 /**
  * Class AbstractGeometryObject
- * @author  Lucas A. de Araújo <lucas@minervasistemas.com.br>
+ * @author  Lucas A. de AraÃºjo <lucas@minervasistemas.com.br>
  * @package Mathematica\Geometry\Shapes\Base
  */
 abstract class AbstractGeometricShape implements IGeometricShape
@@ -12,7 +12,7 @@ abstract class AbstractGeometricShape implements IGeometricShape
     protected $name;
 
     /**
-     * Retorna um nome para a forma geométrica.
+     * Retorna um nome para a forma geomÃ©trica.
      * @return string
      */
     public function getName()
@@ -21,7 +21,7 @@ abstract class AbstractGeometricShape implements IGeometricShape
     }
 
     /**
-     * Define um nome para a forma geométrica.
+     * Define um nome para a forma geomÃ©trica.
      * @param string $name
      * @return void
      */

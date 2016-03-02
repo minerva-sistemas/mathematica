@@ -6,14 +6,14 @@ use Mathematica\Geometry\Shapes\Square;
 use MathematicaTest\Geometry\Shapes\Base\AbstractShapeTest;
 
 /**
- * Teste unitário para a forma geométrica do quadrado.
- * @author  Lucas A. de Araújo <lucas@minervasistemas.com.br>
+ * Teste unitÃ¡rio para a forma geomÃ©trica do quadrado.
+ * @author  Lucas A. de AraÃºjo <lucas@minervasistemas.com.br>
  * @package MathematicaTest\Geometry\Shapes
  */
 class SquareTest extends AbstractShapeTest
 {
     /**
-     * Define a forma geométrica a ser testada.
+     * Define a forma geomÃ©trica a ser testada.
      */
     public function setUp()
     {
@@ -43,7 +43,7 @@ class SquareTest extends AbstractShapeTest
     }
 
     /**
-     * Testa as comparações de medidas entre dois objetos.
+     * Testa as comparaÃ§Ãµes de medidas entre dois objetos.
      */
     public function testGeometricalComparation()
     {
