@@ -22,7 +22,7 @@ class SquareTest extends AbstractShapeTest
         $square->setName('Quadrado de Testes');
         $square->setEdgeSize(10);
 
-        // Define como o quadrado a ser testado
+        // Define o quadrado a ser testado
         $this->setShape($square);
     }
 
