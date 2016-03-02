@@ -59,6 +59,7 @@ class Circle extends AbstractGeometricShape
     public function setDiameter($diameter)
     {
         $this->diameter = $diameter;
+        $this->setRadius($diameter/2);
     }
 
     /**
