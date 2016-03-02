@@ -3,7 +3,7 @@
 namespace Mathematica\Geometry\Shapes\Base;
 
 /**
- * Class AbstractGeometryObject
+ * Class AbstractGeometricShape
  * @author  Lucas A. de Araújo <lucas@minervasistemas.com.br>
  * @package Mathematica\Geometry\Shapes\Base
  */
