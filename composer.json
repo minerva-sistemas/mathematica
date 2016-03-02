@@ -1,0 +1,25 @@
+{
+  "name": "minerva-sistemas/mathematica",
+  "description": "Biblioteca de formulas matemáticas.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Minerva Engenharia de Sistemas",
+      "email": "comercial@minervasistemas.com.br"
+    }
+  ],
+  "autoload":{
+    "psr-4": {
+      "Mathematica\\": "src/Mathematica"
+    }
+  },
+  "autoload-dev":{
+    "psr-4":{
+      "MathematicaTest\\": "test/MathematicaTest"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "5.2.9"
+  }
+}
