@@ -3,24 +3,24 @@
 namespace MathematicaTest\Geometry\Shapes;
 
 use MathematicaTest\Geometry\Shapes\Base\AbstractShapeTest;
-use Mathematica\Geometry\Shapes\EquilateralTriangle;
+use Mathematica\Geometry\Shapes\IsoscelesTriangle;
 
-class EquilateralTriangleTest extends AbstractShapeTest
+class IsoscelesTriangleTest extends AbstractShapeTest
 {
     public function setUp(){
-        $triangle = new EquilateralTriangle(10);
+        $triangle = new IsoscelesTriangle(10,5);
         $this->setShape($triangle);
     }
 
     public function testTriangleArea()
     {
-        //Valores na operação foram convertidos para Integer para que não divergenciem em valores decimais
-        $this->assertEquals((int)$this->getShape()->getArea(), 43);
+        //Valores na operação são convertidos para Integer para que não se divergenciem em valores decimais
+        $this->assertEquals((int)$this->getShape()->getArea(), 24);
     }
 
     public function testTrianglePerimeter()
     {
-        $this->assertEquals($this->getShape()->getPerimeter(), 30);
+        $this->assertEquals($this->getShape()->getPerimeter(), 25);
     }
 
     /**
@@ -28,9 +28,8 @@ class EquilateralTriangleTest extends AbstractShapeTest
      */
     public function testGeometricalComparation()
     {
-        // Configura o triangulo de lado 5
-        $tinyTriangle = new EquilateralTriangle(5);
-        $tinyTriangle->setName('Triangulo de Testes');
+        // Configura o triangulo de lado 7,7,3
+        $tinyTriangle = new IsoscelesTriangle(7,3);
 
         $this->assertTrue($this->getShape()->greaterAreaThan($tinyTriangle));
         $this->assertTrue($this->getShape()->greaterPerimeterThan($tinyTriangle));
