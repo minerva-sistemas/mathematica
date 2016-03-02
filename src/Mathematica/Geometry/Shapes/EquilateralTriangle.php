@@ -31,8 +31,8 @@ class EquilateralTriangle extends AbstractTriangle
      */
     public function getArea()
     {
-        $heigth = ($this->getEdgeX() / 2) * sqrt(3);
-        $area = ($this->getEdgeX() * $heigth) / 2;
+        $height = ($this->getEdgeX() / 2) * sqrt(3);
+        $area = ($this->getEdgeX() * $height) / 2;
         return $area;
     }
 }
